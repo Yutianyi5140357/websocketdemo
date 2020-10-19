@@ -10,7 +10,7 @@ import javax.websocket.server.ServerEndpoint;
 @ServerEndpoint("/")
 public class WebsocketServerEndpoint {
 
-    private Logger logger = (Logger) LoggerFactory.getLogger(getClass());
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     @OnOpen
     public void onOpen(Session session, EndpointConfig config) {
